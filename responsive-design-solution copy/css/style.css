@@ -1,0 +1,72 @@
+.main-container {
+    width: 80%;
+    max-width: 1203px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+#headline {
+    margin: 156px 0 100px;
+}
+
+.project-container {
+    width: 281px;
+    height: 281px;
+    padding: 24px;
+    margin: 100px 78px 100px 0;
+    display: inline-block;
+}
+
+.purple {
+    background-color: #603EB6;
+}
+
+.green {
+    background-color: #009688;
+}
+
+.grey {
+    background-color: #403F3E;
+    margin-right: 0; /*cancel project-container margin right to fit in desktop view*/
+}
+
+/* Text styling */
+
+body {
+    font-family: Avenir;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+h2, h3 {
+    color: white;
+}
+
+p {
+    font-size: 28px;
+}
+
+i {
+    margin-right: 24px;
+}
+
+/* Add Media Query to center project boxes when they first break into a column approx. 912px width*/
+
+@media screen and (max-width: 912px) {
+    .project-container {
+        display: block;
+        margin: 100px auto;
+    }
+}
